@@ -7,6 +7,7 @@ const person = (props) => {
         I'm {props.name} and i am {Math.floor(Math.random() * 30)} years old
       </p>
       <p>{props.children}</p>
+      <input type="text" onChange={props.changed} value={props.name} />
     </div>
   );
 };
